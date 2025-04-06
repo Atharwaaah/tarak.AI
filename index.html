@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tarak.AI</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS for full-page background image */
+        body {
+            background-image: url('vns.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Tiro Devanagari Hindi', serif;
+        }
+
+        /* Custom CSS for animated text container */
+        .animated-text-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        /* Custom CSS for animated text */
+        .animated-text {
+            font-weight: bold;
+            font-family: 'Tiro Devanagari Hindi', serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        #animated-text-kalyug {
+            font-size: 8rem;
+            display: block;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        #animated-text-sanskrit {
+            font-size: 2rem;
+            padding: 10px;
+            background-color: rgb(93, 57, 0, 0.65);
+            color: white;
+            border-radius: 5px;
+        }
+
+        #animated-text-english {
+            font-size: 1.5rem;
+            padding: 10px;
+            background-color: rgb(93, 57, 0, 0.65);
+            color: white;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        /* Style for the buttons (Explore and Narad.Net) */
+        .button-container {
+            margin-top: 20px;
+            display: none; /* Initially hidden */
+        }
+
+        .button-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 0 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Custom CSS to match narad-net.html's navbar */
+        .navbar {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem 1rem;
+            height: 80px;
+            font-family: "Times New Roman", Times, serif;
+            background: rgb(93, 57, 0, 0.8); /* Updated background color */
+        }
+
+        .navbar-brand {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            font-weight: bold;
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: bold;
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: blue !important;
+        }
+
+        .navbar-collapse {
+            position: absolute;
+            right: 0;
+        }
+
+        .navbar-nav .nav-item {
+            margin-left: 1rem;
+        }
+
+        /* Custom CSS to white the toggle icon */
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+        <a class="navbar-brand" href="index.html">tarak.AI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="explore.html">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="narad-net.html">Narad.Net</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Animated Texts and Buttons -->
+    <div class="animated-text-container">
+        <div class="animated-text" id="animated-text-kalyug"></div>
+        <div class="animated-text" id="animated-text-sanskrit"></div>
+        <div id="animated-text-english" class="animated-text"></div>
+
+        <!-- Button Container -->
+        <div class="button-container">
+            <a href="explore.html" class="explore-button">Explore</a>
+            <a href="narad-net.html" class="explore-button">Narad.Net</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript for Letter-by-Letter Animation -->
+    <script>
+        // Function to animate text letter by letter
+        function typeWriter(element, text, speed, callback) {
+            let i = 0;
+            element.innerHTML = ""; // Clear the element before animation
+            let interval = setInterval(function() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(interval);
+                    callback();
+                }
+            }, speed);
+        }
+
+        // Function to display the full translation at once
+        function displayFullText(element, text, callback) {
+            element.innerHTML = text;
+            if (callback) {
+                callback();
+            }
+        }
+
+        // Animate the texts on page load
+        window.onload = function() {
+            const kalyugText = "तारक.AI ";
+            const sanskritText = "जलं रक्षामः, जीवनं रक्षामः";
+            const englishText = "When we preserve water, we safeguard lives.";
+
+            const animatedTextKalyug = document.getElementById("animated-text-kalyug");
+            const animatedTextSanskrit = document.getElementById("animated-text-sanskrit");
+            const animatedTextEnglish = document.getElementById("animated-text-english");
+            const buttonContainer = document.querySelector('.button-container');
+
+            // Hide the button container initially
+            buttonContainer.style.display = 'none';
+
+            typeWriter(animatedTextKalyug, kalyugText, 30, function() {
+                // After Kalyug Patrika is animated, animate Sanskrit text
+                typeWriter(animatedTextSanskrit, sanskritText, 30, function() {
+                    // After Sanskrit text is animated, display English translation at once
+                    displayFullText(animatedTextEnglish, englishText, function() {
+                        // After English translation is displayed, show the buttons
+                        buttonContainer.style.display = 'block';
+                    });
+                });
+            });
+        };
+    </script>
+</body>
+
+</html>
