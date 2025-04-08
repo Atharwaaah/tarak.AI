@@ -58,7 +58,7 @@ This project currently runs through a Google Colab notebook. Follow the steps be
 
 ### 1. Open the Colab Notebook
 - Visit the notebook: [🔗 tarak.AI Colab](https://colab.research.google.com/drive/1ZYc8_cIhDaZMRsGxP-fP8HewPb_ZtOsd?usp=sharing)
-- Click **"Open in Colab"** (or manually upload to Colab)
+
 
 ### 2. Run All Cells
 - Ensure GPU runtime is enabled:  
