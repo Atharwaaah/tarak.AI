@@ -3,18 +3,18 @@
 </p>
 
 
-**"Tarak" (तारक)** in Sanskrit means *Savior* or *Protector*, and **AI** represents the Artificial Intelligence core of this project. **tarak.AI2** is an interactive web application designed to tackle the problem of unreported river pollution by empowering the public to participate in environmental monitoring.
+**"Tarak" (तारक)** in Sanskrit means *Savior* or *Protector*, and **AI** represents the Artificial Intelligence core of this project. **tarak.AI** is an interactive web application designed to tackle the problem of unreported river pollution by empowering the public to participate in environmental monitoring.
 
 ---
 
 ## 🧠 Project Overview
 
-**tarak.AI2** allows users to report river pollution in real time, primarily by uploading images. These images are processed by the **InstructBLIP Vision-Language Model**, which helps in:
+**tarak.AI** allows users to report river pollution in real time, primarily by uploading images. These images are processed by the **InstructBLIP Vision-Language Model**, which helps in:
 
 - Determining the severity of pollution
 - Identifying and classifying visible pollutants
 
-Additional features include( To be Integrated in future):
+Additional features include( some to be Integrated in future):
 
 - Manual or automated (via EXIF data) location tagging
 - Generation of pollution reports for public research
