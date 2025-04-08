@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="tarakAI_banner.png" alt="tarak.AI Banner" width="100%">
+  <img src="tarakAI_banner1.png" alt="tarak.AI Banner" width="100%">
 </p>
 
 
