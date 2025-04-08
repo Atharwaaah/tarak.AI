@@ -57,7 +57,7 @@ Additional features include( some to be Integrated in future):
 This project currently runs through a Google Colab notebook. Follow the steps below to get started:
 
 ### 1. Open the Colab Notebook
-- Visit the notebook: [🔗 tarak.AI Colab](https://github.com/Atharwaaah/tarak.AI/blob/main/tarakAI_colab.ipynb)
+- Visit the notebook: [🔗 tarak.AI Colab]([https://github.com/Atharwaaah/tarak.AI/blob/main/tarakAI_colab.ipynb](https://colab.research.google.com/drive/1ZYc8_cIhDaZMRsGxP-fP8HewPb_ZtOsd?usp=sharing))
 - Click **"Open in Colab"** (or manually upload to Colab)
 
 ### 2. Run All Cells
